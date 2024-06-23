@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Automation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Home Automation</h1>
+    <div class="controls">
+      <div class="light-selection">
+        <h2>Select Lights</h2>
+        <div class="light-checkboxes">
+          <div class="checkbox-group">
+            <input type="checkbox" id="light1" name="light1" value="1">
+            <label for="light1">Light 1</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="light2" name="light2" value="2">
+            <label for="light2">Light 2</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="light3" name="light3" value="3">
+            <label for="light3">Light 3</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="light4" name="light4" value="4">
+            <label for="light4">Light 4</label>
+          </div>
+        </div>
+      </div>
+      <div class="light-controls">
+        <h2>Control Lights</h2>
+        <div class="control-buttons">
+          <button id="turn-on" disabled>Turn On</button>
+          <button id="turn-off" disabled>Turn Off</button>
+          <button id="send-signal" disabled>Send Signal</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

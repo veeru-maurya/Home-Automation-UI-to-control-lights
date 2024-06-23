@@ -1,0 +1,117 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: hsl(194, 96%, 48%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 800px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.light-selection,
+.light-controls {
+  flex-basis: 45%;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.light-checkboxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkbox-group:hover {
+  background-color: #e6e6e6;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+.checkbox-group label {
+  font-size: 16px;
+  color: #555;
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.control-buttons button {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.control-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.control-buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Additional Styles */
+.container {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.checkbox-group input[type="checkbox"]:checked + label {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.control-buttons button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
